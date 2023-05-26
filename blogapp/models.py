@@ -18,7 +18,6 @@ class Category(models.Model):
         return super().save(force_insert, force_update, using, update_fields)
 
 
-# Create your models here.
 class Post(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=50)
